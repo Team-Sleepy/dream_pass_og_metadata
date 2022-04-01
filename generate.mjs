@@ -8,13 +8,14 @@ const template = {
 };
 
 Array.from(Array(50).keys()).forEach((i) => {
+  const tokenId = i + 1;
   const json = {
     ...template,
 
-    name: `Dream Pass OG #${i + 1}`,
+    name: `Dream Pass OG #${tokenId}`,
     description:
       'Dream Pass OG is the first collection by SleepyheadzZz. Holders will have access to powerful NFT market bots on Discord, such as real-time price tracking, automated floor and token alerts, trend graphs, wallet monitoring, mint progress tracking and more!\nNo more switching between browser tabs and apps while engaging with your communities on Discord. Make your NFT journey easier with Dream Pass!',
   };
-  fs.writeFileSync(`./${i}.json`, JSON.stringify(json, null, 2));
+  fs.writeFileSync(`./${tokenId}.json`, JSON.stringify(json, null, 2));
   // console.log(json);
 });
