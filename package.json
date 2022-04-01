@@ -1,0 +1,8 @@
+{
+  "name": "dream_pass_og_metadata",
+  "version": "1.0.0",
+  "main": "generate.js",
+  "repository": "https://github.com/Team-Sleepy/dream_pass_og_metadata.git",
+  "author": "Lu Yu <yu.lu@shopee.com>",
+  "license": "MIT"
+}
